@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dagim Bireda - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle Button -->
+  <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Header with profile image and hamburger -->
+  <header class="header">
+    <div class="profile-container">
+      <img src="photo_2025-05-18_20-56-20.jpg" alt="Dagim Bireda" class="profile-img" />
+      <h1>I’m Dagim Bireda, <span class="typewrite" data-words='["Developer.", "Designer.", "Creator."]'></span></h1>
+      <p>A 21-year-old Software Engineering student developing cool, user-friendly projects with creativity and code.</p>
+    </div>
+
+    <div class="hamburger" id="hamburger">☰</div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#settings" id="openSettingsBtn">Settings</a></li>
+        <li><a href="#profile" id="openProfileBtn">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Download CV -->
+  <div class="download-section">
+    <a href="Notes_250518_233256.pdf" download class="btn-cv">MY CONTACT PROFILE</a>
+  </div>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="card">
+      <div class="card-image">
+        <img src="software.webp" alt="Software Image" />
+      </div>
+      <h2>Software</h2>
+      <p>What is software?</p>
+      <button>OPEN</button>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="managment.jpeg" alt="Management Image" />
+      </div>
+      <h2>Management</h2>
+      <p>What is management?</p>
+      <button>OPEN</button>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="engineering.jpeg" alt="Engineering Image" />
+      </div>
+      <h2>Engineering</h2>
+      <p>What is Engineering?</p>
+      <button>OPEN</button>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="system.jpg" alt="System Image" />
+      </div>
+      <h2>System</h2>
+      <p>What is system?</p>
+      <button>OPEN</button>
+    </div>
+  </section>
+
+  <!-- About Myself -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2><span class="highlight">Hey, I'm Dagim Bireda</span> 👋</h2>
+        <p>
+          I'm a <strong>21-year-old Software Engineering student</strong> with a passion for building creative,
+          user-friendly software solutions. I love turning ideas into real-world tech that solves problems and brings delight.
+        </p>
+        <div class="about-highlights">
+          <div><i class="fas fa-code"></i> HTML, CSS, JavaScript</div>
+          <div><i class="fas fa-language"></i> English & Amharic</div>
+          <div><i class="fas fa-tools"></i> VSCode, Git, DevTools</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="skills">
+    <h2>My Skills</h2>
+
+    <p>HTML</p>
+    <div class="bar"><div class="fill html"></div></div>
+
+    <p>CSS</p>
+    <div class="bar"><div class="fill css"></div></div>
+
+    <p>JavaScript</p>
+    <div class="bar"><div class="fill js"></div></div>
+  </div>
+
+  <!-- Fun Facts -->
+  <section class="fun-facts">
+    <h2>Fun Facts About Me 😄</h2>
+    <ul>
+      <li>🎮 I love watching movie and gaming at night.</li>
+      <li>☕ Coffee fuels my creativity 3 cups a day is crazy.</li>
+      <li>📚 I enjoy learning from youtube videos.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required placeholder="First Name" />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required placeholder="Last Name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="your@email.com" />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" required placeholder="+2519********" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required placeholder="Your password" />
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/dagi_zeurael" target="_blank" class="icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/dagim.bireda.9" target="_blank" class="icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://t.me/zeuraeldagi" target="_blank" class="icon telegram" aria-label="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dagim Bireda. All rights reserved.</p>
+  </footer>
+
+  <!-- Settings Slide Panel -->
+  <div id="settingsPanel" class="settings-panel">
+    <div class="settings-header">
+      <h2>Settings</h2>
+      <button id="closeSettings" class="close-btn">&times;</button>
+    </div>
+    <div class="settings-content">
+      <label for="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle"> Enable Dark Mode
+      </label>
+
+      <label for="displayName">Change Display Name:</label>
+      <input type="text" id="displayName" placeholder="Enter your name" />
+      <button id="saveNameBtn">Save Name</button>
+
+      <label for="profilePicUpload">Change Profile Picture:</label>
+      <input type="file" id="profilePicUpload" accept="image/*" />
+      <button id="uploadPicBtn">Upload</button>
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <!-- Overlay for blur effect -->
+  <div id="overlayBlur" class="overlay-blur"></div>
+
+  <!-- Profile Slide Panel -->
+  <div id="profilePanel" class="profile-panel">
+    <div class="profile-header">
+      <h2>My Profile</h2>
+      <button id="closeProfile" class="close-btn">&times;</button>
+    </div>
+    <div class="profile-content">
+      <img src="photo_2025-05-18_20-56-20.jpg" alt="Dagim Bireda" class="profile-img-large" />
+      <h3>Dagim Bireda</h3>
+      <p><strong>Age:</strong> 21</p>
+      <p><strong>Profession:</strong> Software Engineering Student</p>
+      <p><strong>Skills:</strong></p>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>UI/UX Design</li>
+        <li>Git, VSCode, Debugging</li>
+      </ul>
+      <p><strong>Languages:</strong> English, Amharic</p>
+      <a href="tel:+251929040636" class="call-btn">📞 Call Me</a>
+    </div>
+  </div>
+
+  <!-- Overlay for Profile Panel -->
+ <div id="overlayBlur" class="overlay-blur"></div>
+
+  <!-- Scripts -->
+  <script src="newjava.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
